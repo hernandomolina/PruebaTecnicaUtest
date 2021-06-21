@@ -9,9 +9,13 @@ public class UtestData {
     private String day;
     private String year;
     private String city;
+    private String idioma;
     private String postalCode;
     private String country;
     private String computer;
+
+
+
     private String version;
     private String language;
     private String mobileDevice;
@@ -75,6 +79,14 @@ public class UtestData {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getIdioma() {
+        return idioma;
+    }
+
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
     }
 
     public String getPostalCode() {

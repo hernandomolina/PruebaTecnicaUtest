@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Test project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f6cd8a9a4bd748368b481527b586b840ea567cd601807ae762cf2c6651e23c0b.html">Test Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="30298a344299ed3a5b9cf4071a53123f1e24dd426a2be373c4c6bb35bcf8b4f2.html">New user registration </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-06-2021 17:22</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Test Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user, I want to register on the utes page
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">New user registration
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="890fdddaba33b65051ab5143077c28bccde699e03fd7a864e5f73797a0d772f8.png" title=" Given Juan wants to register as a new user on the utes page" width="1920"/>
+                <img src="890fdddaba33b65051ab5143077c28bccde699e03fd7a864e5f73797a0d772f8.png" title=" Juan open up" width="1920"/>
+                <img src="890fdddaba33b65051ab5143077c28bccde699e03fd7a864e5f73797a0d772f8.png" title=" Juan opens the Utest page" width="1920"/>
+                <img src="890fdddaba33b65051ab5143077c28bccde699e03fd7a864e5f73797a0d772f8.png" title=" Juan open up (completed)" width="1920"/>
+                <img src="890fdddaba33b65051ab5143077c28bccde699e03fd7a864e5f73797a0d772f8.png" title=" Given Juan wants to register as a new user on the utes page (completed)" width="1920"/>
+                <img src="c7de81466e1efbebe7e3333177ec3fb36ab886234e806f3ef9c68be5bb79d278.png" title=" When he the registration form for new users
+| name | lastName | emailAddress | month | day | year | city | idioma | postalCode | country | computer | version | language | mobileDevice | model | os | password | confirPassword |
+| Juan | Perez | juanp78@gmail.com | April | 8 | 2001 | Barranquilla | Spanish | 080011 | Albania | Windows | 10 | Spanish | Apple | iPhone 11 | iOS 14 | Molina0893 | Molina0893 |" width="1920"/>
+                <img src="c7de81466e1efbebe7e3333177ec3fb36ab886234e806f3ef9c68be5bb79d278.png" title=" Juan register" width="1920"/>
+                <img src="c7de81466e1efbebe7e3333177ec3fb36ab886234e806f3ef9c68be5bb79d278.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="3d382ae971ee6937abe2030e6576b72e83c31ac0adcf91919249a50e113f35e8.png" title=" Juan enters 'Juan' into where do we write the name" width="1920"/>
+                <img src="c5242b5a271e383028f6bcdf873b4834e546309eef7027a256fd65b78e6f851a.png" title=" Juan enters 'Perez' into where do we write the lastname" width="1920"/>
+                <img src="96e9f3532ef52e81f47ec5e93f60efbd1766ed0db75e83dce0d119efed727ae8.png" title=" Juan enters 'juanp78@gmail.com' into where do we write the email" width="1920"/>
+                <img src="90269934f18f7fc8fa77ef82788dbf61965507f57cf76c2d6387ae1859e024f9.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="f6befb86928413f54b5f99b024b5cf9fb87a0272393d4d0275388b02eedbc8ad.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="029f466f34b1542c4cc47a8e8ddc2ca72a68da527287f8a295ec3fe8a63eb025.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="9cf67e02e3f98fa5c298ad0780ceb75c092ca49f8fdf0fc4541a0cadd70ade80.png" title=" Juan clicks on button that shows us the form to country" width="1920"/>
+                <img src="1c9f0aac8ad41a36109354ac906a2677c1e439e5ebf90174fe032d54b123f67d.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="9eb5a9e5d181066c00dfeabb8d9fab9b46806e2d86b6288241d19f2a3fd40104.png" title=" Juan clicks on where to next step" width="1920"/>
+                <img src="22b87e25a1623dc06b780bdb655d5df025f50bf0e96ff10369ed5ee0aa7c2d9b.png" title=" Juan enters 'Barranquilla' into where do we write the ciudad" width="1920"/>
+                <img src="128949a9b96957949ac316771e3f7e366fcadb9d2284e9d8423753cc771df99e.png" title=" Juan enters '080011' into where do we write the codepostal" width="1920"/>
+                <img src="46ba1b91697157bf1edca70d9a9831762d304e38657e6694e9ea56bfb79c3c93.png" title=" Juan clicks on button that shows us the form to country" width="1920"/>
+                <img src="c79c9a1aaf8eed9ea06afc33da83bede6edb8cd8ab3cff13bdb4de3d2b618c8c.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="4d241f1d3337126f8ec59b5bca03e9f273a3a9a2c045e4cec37ea6876bd84ede.png" title=" Juan clicks on where to next step" width="1920"/>
+                <img src="f3718ce6a5d77da681ce92f43f0378c73722ee523dee6f92546f24ea84450fec.png" title=" Juan clicks on button that shows us the form to computerr" width="1920"/>
+                <img src="cc683f343ea7710d6fc1503f78df5db2a99dceb263b8911ff22e8adb1c54517e.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="d7cf400047916cf10e66988a0434cadbdcd44a173741a6785f197eef15cacd1f.png" title=" Juan clicks on button that shows us the form to version" width="1920"/>
+                <img src="84f0cb00adfbe072f4a80535d4b3a9f2954225a658eac483f5e1b71ee9c18b94.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="0bcdc58b3a1d41f9b514fa31c7bff5a3a54ad5e5cf3bfad498eecdfc34fd5b0f.png" title=" Juan clicks on button that shows us the form to language" width="1920"/>
+                <img src="79fd082698b50af7aa512a3e7f9064670270b969e4b7b3088908488ff743e06d.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="0ed2848d80a7bc46d913c5c280b37e52a54199fa1f0a1a91cf930ccab6ff7076.png" title=" Juan clicks on button that shows us the form to device" width="1920"/>
+                <img src="5a07463962ba3a248e7f70455f211be8127edbfac131ec232a0eedd190d5626d.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="2d8d3dfb7bccd0ea0e9fcdfffe531ce8d0da4847b11d99eaef0b400c9323bc44.png" title=" Juan clicks on button that shows us the form to model" width="1920"/>
+                <img src="ba943a581d63a3b8c112d39d539149e06eb572afd2a078ebed63edde82e3b2bf.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="db68ccd146f364fdec3ad5b2b21aa7d9d63581c59ba7e180f0d71553cea87b73.png" title=" Juan clicks on button that shows us the form to os" width="1920"/>
+                <img src="17267d00768fc1ce1aecc3107307c5f2448c8af4666223d5c5381ab64eb3f859.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="b8b9536779ad6f61cf4c77fda22752d253d7a18bfae6c00bbda3f7d42fdb746b.png" title=" Juan clicks on where to next step" width="1920"/>
+                <img src="0a28515e82e559d80494adbc3153db8b0dcbe34976b2c19f295cc24d7e752d7c.png" title=" Juan enters 'Molina0893' into where do we write the password" width="1920"/>
+                <img src="768ddce343706da6aa8cbafc9e807f80071ca19cb3367be389ebbdf7a2b1618f.png" title=" Juan enters 'Molina0893' into where do we write the confirm password" width="1920"/>
+                <img src="6512b7679e87f509423a6ea1a086d9470f7f9ca6098c015bc8edd90ba05d620a.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="637920227c1fadeb30eb539926b91fc61fc4116cb4d6caaf4da1f662d57cb64c.png" title=" Juan clicks on button that shows us the form to register" width="1920"/>
+                <img src="109c18234d7e964bd7f4ab8fdad47e4955bac5f8d0d9eb51c2c9c6067b1b6d93.png" title=" Juan clicks on where to next step" width="1920"/>
+                <img src="109c18234d7e964bd7f4ab8fdad47e4955bac5f8d0d9eb51c2c9c6067b1b6d93.png" title=" Juan register (completed)" width="1920"/>
+                <img src="109c18234d7e964bd7f4ab8fdad47e4955bac5f8d0d9eb51c2c9c6067b1b6d93.png" title=" When he the registration form for new users
+| name | lastName | emailAddress | month | day | year | city | idioma | postalCode | country | computer | version | language | mobileDevice | model | os | password | confirPassword |
+| Juan | Perez | juanp78@gmail.com | April | 8 | 2001 | Barranquilla | Spanish | 080011 | Albania | Windows | 10 | Spanish | Apple | iPhone 11 | iOS 14 | Molina0893 | Molina0893 | (completed)" width="1920"/>
+                <img src="109c18234d7e964bd7f4ab8fdad47e4955bac5f8d0d9eb51c2c9c6067b1b6d93.png" title=" Then he complete the registration of new user: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

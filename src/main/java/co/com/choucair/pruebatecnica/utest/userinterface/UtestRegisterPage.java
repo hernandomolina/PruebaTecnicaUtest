@@ -19,6 +19,8 @@ public class UtestRegisterPage extends PageObject {
             .locatedBy("//select[@id='birthDay']//option[text()='{0}']");
     public static final Target BOX_YEAR = Target.the("button that shows us the form to register")
             .locatedBy("//select[@id='birthYear']//option[text()='{0}']");
+    public static final Target BOX_IDIOMA = Target.the("button that shows us the form to country")
+            .locatedBy("//div[@id='languages']");
     public static final Target ENTER_BUTTON = Target.the("where to next step")
             .located(By.xpath("//div[@class='form-group col-xs-12 text-right']//a"));
     public static final Target INPUT_CITY = Target.the("where do we write the ciudad")

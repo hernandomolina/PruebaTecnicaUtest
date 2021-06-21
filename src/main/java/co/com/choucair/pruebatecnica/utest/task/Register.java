@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.rest.interactions.Options;
 
 public class Register implements Task {
 
@@ -16,6 +18,7 @@ public class Register implements Task {
     private String day;
     private String year;
     private String city;
+    private String idioma;
     private String postalCode;
     private String country;
     private String computer;
@@ -27,7 +30,7 @@ public class Register implements Task {
     private String password;
     private String confirPassword;
 
-    public Register(String name, String lastName, String emailAddress, String month, String day, String year, String city, String postalCode, String country, String computer, String version, String language, String mobileDevice, String model, String os, String password, String confirPassword) {
+    public Register(String name, String lastName, String emailAddress, String month, String day, String year, String city, String idioma, String postalCode, String country, String computer, String version, String language, String mobileDevice, String model, String os, String password, String confirPassword) {
         this.name = name;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
@@ -35,6 +38,7 @@ public class Register implements Task {
         this.day = day;
         this.year = year;
         this.city = city;
+        this.idioma = idioma;
         this.postalCode = postalCode;
         this.country = country;
         this.computer = computer;
@@ -47,8 +51,8 @@ public class Register implements Task {
         this.confirPassword = confirPassword;
     }
 
-    public static Register the(String name, String lastName, String emailAddress, String month, String day, String year, String city, String postalCode, String country, String computer, String version, String language, String mobileDevice, String model, String os, String password, String confirPassword) {
-        return Tasks.instrumented(Register.class, name,lastName,emailAddress,month,day,year,city,postalCode,country,computer,version,language,mobileDevice,model,os,password,confirPassword);
+    public static Register the(String name, String lastName, String emailAddress, String month, String day, String year, String city, String idioma, String postalCode, String country, String computer, String version, String language, String mobileDevice, String model, String os, String password, String confirPassword) {
+        return Tasks.instrumented(Register.class, name,lastName,emailAddress,month,day,year,city,idioma,postalCode,country,computer,version,language,mobileDevice,model,os,password,confirPassword);
     }
 
 
@@ -62,7 +66,11 @@ public class Register implements Task {
                 Click.on(UtestRegisterPage.BOX_MONTH.of(month)),
                 Click.on(UtestRegisterPage.BOX_DAY.of(day)),
                 Click.on(UtestRegisterPage.BOX_YEAR.of(year)),
+                Click.on(UtestRegisterPage.BOX_IDIOMA),
+                Click.on(UtestRegisterPage.SELECT.of(idioma)),
+
                 Click.on(UtestRegisterPage.ENTER_BUTTON),
+
                 Enter.theValue(city).into(UtestRegisterPage.INPUT_CITY),
                 Enter.theValue(postalCode).into(UtestRegisterPage.INPUT_CODEPOSTAL),
 

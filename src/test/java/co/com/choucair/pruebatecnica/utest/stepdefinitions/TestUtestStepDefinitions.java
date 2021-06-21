@@ -29,7 +29,7 @@ public class TestUtestStepDefinitions {
     @When("^he the registration form for new users$")
     public void heTheRegistrationFormForNewUsers(List<UtestData> utestData) throws Exception{
         OnStage.theActorInTheSpotlight().attemptsTo(Register.the(utestData.get(0).getName(), utestData.get(0).getLastName(), utestData.get(0).getEmailAddress(), utestData.get(0).getMonth(), utestData.get(0).getDay(),
-                utestData.get(0).getYear(), utestData.get(0).getCity(), utestData.get(0).getPostalCode(), utestData.get(0).getCountry(), utestData.get(0).getComputer(), utestData.get(0).getVersion(), utestData.get(0).getLanguage(),
+                utestData.get(0).getYear(), utestData.get(0).getCity(), utestData.get(0).getIdioma(), utestData.get(0).getPostalCode(), utestData.get(0).getCountry(), utestData.get(0).getComputer(), utestData.get(0).getVersion(), utestData.get(0).getLanguage(),
                 utestData.get(0).getMobileDevice(), utestData.get(0).getModel(), utestData.get(0).getOs(),utestData.get(0).getPassword(), utestData.get(0).getConfirPassword()));
 
     }
