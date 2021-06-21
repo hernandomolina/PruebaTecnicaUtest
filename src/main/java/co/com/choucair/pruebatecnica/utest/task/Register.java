@@ -103,6 +103,8 @@ public class Register implements Task {
 
                 Enter.theValue(confirPassword).into(UtestRegisterPage.INPUT_CONFIR_PASSWORD),
 
+                Click.on(UtestRegisterPage.CHECK_STAY),
+
                 Click.on(UtestRegisterPage.CHECK_TERM),
 
                 Click.on(UtestRegisterPage.CHECK_PRIVACY),

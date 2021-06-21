@@ -51,6 +51,8 @@ public class UtestRegisterPage extends PageObject {
             .located(By.id("password"));
     public static final Target INPUT_CONFIR_PASSWORD = Target.the("where do we write the confirm password")
             .located(By.id("confirmPassword"));
+    public static final Target CHECK_STAY = Target.the("button that shows us the form to register")
+            .located(By.xpath("//label[@class='input-check-box signup-consent signup-consent--highlight']"));
     public static final Target CHECK_TERM = Target.the("button that shows us the form to register")
             .located(By.xpath("//input[@id='termOfUse']"));
     public static final Target CHECK_PRIVACY = Target.the("button that shows us the form to register")
